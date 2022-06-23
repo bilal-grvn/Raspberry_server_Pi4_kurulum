@@ -1,5 +1,5 @@
-<h1 align="center">Hi 👋, We are BMF</h1>
-<h3 align="left">Burada RaspberryPi4 için yaptığımız Ubuntu Server 20.04 kurulumu ve sonrası işlemleri anlatıyorum </h3>
+<h1 align="center">Herkese Selamlar 👋,</h1>
+<h3 align="left">Burada RaspberryPi4 için yaptığım Ubuntu Server 20.04 kurulumu ve sonrası işlemleri anlatıyorum. Kısa kodlar ile detaya girmeden bilgi vermeye çalıştım. Umarım sizlere de faydası olur</h3>
 
 # 🚀 UBUNTU SERVER 20.04 Kurulumu
 
@@ -13,22 +13,18 @@ ilk olarak [Raspberry Pi imager](https://www.raspberrypi.com/software/) program�
 
 `Ubuntu Server 20.04.4 LTS (RPi 3/4/400) `
 
-seçeneklerini takip ediyoruz. Ve image yüklenecek kartı seçerek yükleme işlemine başlıyoruz.
-image işlemi tamamlanıp SD kartımızı Raspberry bilgisayarımıza takalım.
+seçeneklerini takip edelim ve image yüklenecek kartı seçerek yükleme işlemine başlayalım.
+Sonrasında image yükleme işlemi tamamlandığında SD kartımızı Raspberry bilgisayarımıza takalım.
 
-sistem ilk açıldığında 
-
-`kullanıcı adı:ubuntu`
-
-`şifre:ubuntu`
+sistem ilk açıldığında default olarak `kullanıcı adı:ubuntu`, `şifre:ubuntu` gelir.
 
 Ve sonrasında yeni şifre girmemizi isteyecek. Sistem terminal ekranı üzerinden işlemekte. 
-Bu yüzden saat, dil, bölge, klavye gibi ayarları kendimiz terminal ekranından yapmamız gerekmekte.
+Bu yüzden saat, dil, bölge, klavye gibi ayarları kendimiz terminal ekranından yapmamız gerekiyor.
 İlk başta ethernet kablosu ile internete bağlanmamız gerekicek.
 
-# 🚀 Bölge ve Klavye Ayarları
+# 🚀 Terminal Ekranından Bölge ve Klavye Ayarları
 
-Tarih ayarlarını yapabilmemiz için aşağıdaki komut ile yükleme yapmamız gerekmekte
+Tarih ayarlarını yapabilmemiz için aşağıdaki komut ile yükleme yapmamız gerekiyor.
 ```sh
 $ sudo apt install htpdate
 ```
@@ -96,7 +92,7 @@ network:
 	search: []
  version: 2
 ```
-düzenlemeleri yaptıktan sonra `Ctrl+X` ve `Y` `enter` diyerek çıkalım.
+düzenlemeleri yaptıktan sonra `Ctrl+X` ve `Y` (yes) `enter` diyerek çıkalım.
 
 ```sh
 $ sudo netplan generate
