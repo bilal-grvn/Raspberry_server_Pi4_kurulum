@@ -1,5 +1,5 @@
 <h1 align="center">👋 Herkese Selamlar 👋</h1>
-<h3 align="left">Burada RaspberryPi4 için yaptığım Ubuntu Server 20.04 kurulumu ve sonrası işlemleri anlatıyorum. Kısa kodlar ile detaya girmeden bilgi vermeye çalıştım. Umarım sizlere de faydası olur</h3>
+<h3 align="left">`Raspberry Pi 4` için yaptığım Ubuntu Server 20.04 kurulumu ve sonrası işlemleri anlatıyorum. Kısa kodlar ile detaya girmeden bilgi vermeye çalıştım. Umarım sizlere de faydası olur</h3>
 
 # 🚀 UBUNTU SERVER 20.04 Kurulumu
 
