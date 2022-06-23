@@ -2,10 +2,10 @@
 👋 Herkese Selamlar 👋
 </h1>
 
-<h2 align="center">
-`Raspberry Pi4` için yaptığım `Ubuntu Server 20.04` kurulumu ve sonrası işlemleri anlatıyorum. 
-Kısa kodlar ile detaya girmeden bilgi vermeye çalıştım. Umarım sizlere de faydası olur
-</h2>
+
+#`Raspberry Pi4` için yaptığım `Ubuntu Server 20.04` kurulumu ve sonrası işlemleri anlatıyorum. 
+# Kısa kodlar ile detaya girmeden bilgi vermeye çalıştım. Umarım sizlere de faydası olur
+
 
 # 🚀 UBUNTU SERVER 20.04 Kurulumu
 
