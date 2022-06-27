@@ -18,9 +18,9 @@ ilk olarak [Raspberry Pi imager](https://www.raspberrypi.com/software/) program�
 
 `Ubuntu Server 20.04.4 LTS (RPi 3/4/400) `
 
-<h1 align="center">
-| ![alt text](image/rasp_image.gif?raw=true) |
-</h1>
+<p align="center">
+  <img width="460" height="300" src="image/rasp_image.gif?raw=true">
+</p>
 
 seçeneklerini takip edelim ve image yüklenecek kartı seçerek yükleme işlemine başlayalım.
 Sonrasında image yükleme işlemi tamamlandığında SD kartımızı Raspberry bilgisayarımıza takalım.
