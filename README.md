@@ -19,7 +19,7 @@ ilk olarak [Raspberry Pi imager](https://www.raspberrypi.com/software/) program�
 `Ubuntu Server 20.04.4 LTS (RPi 3/4/400) `
 
 <p align="center">
-  <img width="460" height="300" src="image/rasp_image.gif?raw=true">
+  <img width="560" height="400" src="image/rasp_image.gif?raw=true">
 </p>
 
 seçeneklerini takip edelim ve image yüklenecek kartı seçerek yükleme işlemine başlayalım.
