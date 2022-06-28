@@ -101,7 +101,7 @@ network:
   wlan0:
    optional: true
    access-points:
-    "SSID":
+    "SSID_NAME":
      password: "password"
    dhcp4: true
 ```
