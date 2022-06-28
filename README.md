@@ -107,13 +107,13 @@ düzenlemeleri yaptıktan sonra `Ctrl+X` ve `Y` (yes) `enter` diyerek çıkalım
 $ sudo netplan generate
 ```
 ```sh
-$ sudo netplan applay
+$ sudo netplan apply
 ```
 diyerek yapılandırma işlemini gerçekleştirelim. Bu sayede static IP atama işlemini gereçekleştirmiş oluruz.
 
 Terminal ekranından wifi ağına bağlanabilmemiz için aşağıdaki kod ile yükleme yapalım
 ```sh
-$ sudo netplan applay
+$ sudo apt install network-manager
 ```
 yükleme işleminden sonra terminal ekranına
 ```sh
