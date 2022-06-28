@@ -88,18 +88,22 @@ Burada dikkat etmemiz gereken bir nokta; boşlukları `TAB` ile vermeyin. Hata v
 network:
  ethernets:
   eth0:
-   addresses:
-   - 192.168.1.200/24
+   addresses: [192.168.1.200/24]
+   gateway4: 162.162.1.1
    dhcp4: true
    optional: true
-   gateway4: 162.162.1.1
    nameservers:
-	addresses:
-	- 192.168.1.1
-	- 8.8.8.8
-	- 8.8.4.4
-	search: []
+    addresses: [4.2.2.2, 8.8.8.8]
+    search: []
  version: 2
+
+ wifis:
+  wlan0:
+   optional: true
+   access-points:
+    "SSID":
+     password: "password"
+   dhcp4: true
 ```
 düzenlemeleri yaptıktan sonra `Ctrl+X` ve `Y` (yes) `enter` diyerek çıkalım.
 
@@ -109,9 +113,12 @@ $ sudo netplan generate
 ```sh
 $ sudo netplan apply
 ```
-diyerek yapılandırma işlemini gerçekleştirelim. Bu sayede static IP atama işlemini gereçekleştirmiş oluruz.
+diyerek yapılandırma işlemini gerçekleştirelim. Bu sayede static IP atama ve wifi bağlantı işlemlerini gereçekleştirmiş oluruz.
 
-Terminal ekranından wifi ağına bağlanabilmemiz için aşağıdaki kod ile yükleme yapalım
+
+EK olarak [nmcli](https://www.cyberithub.com/30-nmcli-command-examples-in-linux-rhel-centos-cheat-sheet/) kodlarını kullanarak da wifi ile ilgili bir çok işlem yapılabilir.
+
+Ayrıca terminal ekranından wifi ağına bağlanabilmemiz için aşağıdaki kod ile yükleme yapalım
 ```sh
 $ sudo apt install network-manager
 ```
