@@ -141,7 +141,7 @@ $ fdisk -l
   <img src="image/usb_list.PNG?raw=true">
 </p>
 
-listeden sda ya izin vermek için aşağıdaki satırı yazarız
+listeden `sda` ya izin vermek için aşağıdaki satırı yazarız
 ```sh
 $ sudo chmod 666 /dev/sda
 ```
@@ -162,7 +162,7 @@ $ sudo cp -r /media/raspberry_ws /home/ubuntu
 
 Aşağıdaki satır ile istenen klasörü silebiliriz
 ```sh
-$ sudo cp -r /media/raspberry_ws /home/ubuntu
+$ sudo rm -r /media/raspberry_ws 
 ```
 
 USB ile işimiz bittikten sonra sistemden çıkarmak için aşağıdaki kod yazılır
