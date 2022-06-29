@@ -31,6 +31,7 @@ Ve sonrasında yeni şifre girmemizi isteyecek. Sistem terminal ekranı üzerind
 Bu yüzden saat, dil, bölge, klavye gibi ayarları kendimiz terminal ekranından yapmamız gerekiyor.
 İlk başta ethernet kablosu ile internete bağlanmamız gerekicek.
 
+# -------------------------------------------------------------------------------------------
 # 🚀 Terminal Ekranından Bölge ve Klavye Ayarları
 
 Tarih ayarlarını yapabilmemiz için aşağıdaki komut ile yükleme yapmamız gerekiyor.
@@ -57,6 +58,7 @@ $ sudo dpkg-reconfigure keyboard-configuration
 ```
 ile giriş yaptığımızda klavye ayarlarını yapabiliriz. Sonrasında bilgisayarı baştan başlatmamız gerekir.
 
+# -------------------------------------------------------------------------------------------
 # 🚀 Static IP atama 
 
 ```sh
@@ -127,3 +129,43 @@ yükleme işleminden sonra terminal ekranına
 $ nmtui
 ```
 yazarsak bizi wifi ağına bağlamak için yönlendirecektir.
+
+# -------------------------------------------------------------------------------------------
+# 🚀 USB den dosya çekme 
+
+Terminal ekranına aşağıdaki satırı yazarsak USB leri listeler
+```sh
+$ fdisk -l
+```
+<p align="center">
+  <img src="image/usb_list.PNG?raw=true">
+</p>
+
+listeden sda ya izin vermek için aşağıdaki satırı yazarız
+```sh
+$ sudo chmod 666 /dev/sda
+```
+<p align="center">
+  <img src="image/usb_izin.PNG?raw=true">
+</p>
+
+USB ye gerekli izinleri verdikten sonra, USB yi `/media` klasörü içerisinde göstermek için aşağıdaki satır yazılır 
+```sh
+$ sudo mount /dev/sda1 /media
+```
+
+`/media` klasörü içerisinden USB ye ait dosyalar görünür. Ve buradan gerekli klasörü istenen yere aşağıdaki satır ile kopyalabiliriz
+
+```sh
+$ sudo cp -r /media/raspberry_ws /home/ubuntu
+```
+
+Aşağıdaki satır ile istenen klasörü silebiliriz
+```sh
+$ sudo cp -r /media/raspberry_ws /home/ubuntu
+```
+
+USB ile işimiz bittikten sonra sistemden çıkarmak için aşağıdaki kod yazılır
+```sh
+$ sudo umount /media
+```
