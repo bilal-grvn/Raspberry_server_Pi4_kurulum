@@ -5,7 +5,7 @@
 
 ## `Raspberry Pi4` için yaptığım `Ubuntu Server 20.04` kurulumu ve sonrası işlemleri anlatıyorum. Kısa kodlar ile detaya girmeden bilgi vermeye çalıştım. Umarım sizlere de faydası olur
 
-
+# -----------------------------------------------------------------------------
 # 🚀 UBUNTU SERVER 20.04 Kurulumu
 
 ilk olarak [Raspberry Pi imager](https://www.raspberrypi.com/software/) programı yardımı ile SD kartımıza image dosyamızı yüklüyoruz.
@@ -31,7 +31,7 @@ Ve sonrasında yeni şifre girmemizi isteyecek. Sistem terminal ekranı üzerind
 Bu yüzden saat, dil, bölge, klavye gibi ayarları kendimiz terminal ekranından yapmamız gerekiyor.
 İlk başta ethernet kablosu ile internete bağlanmamız gerekicek.
 
-# -------------------------------------------------------------------------------------------
+# -----------------------------------------------------------------------------
 # 🚀 Terminal Ekranından Bölge ve Klavye Ayarları
 
 Tarih ayarlarını yapabilmemiz için aşağıdaki komut ile yükleme yapmamız gerekiyor.
@@ -58,7 +58,7 @@ $ sudo dpkg-reconfigure keyboard-configuration
 ```
 ile giriş yaptığımızda klavye ayarlarını yapabiliriz. Sonrasında bilgisayarı baştan başlatmamız gerekir.
 
-# -------------------------------------------------------------------------------------------
+# -----------------------------------------------------------------------------
 # 🚀 Static IP atama 
 
 ```sh
@@ -130,7 +130,7 @@ $ nmtui
 ```
 yazarsak bizi wifi ağına bağlamak için yönlendirecektir.
 
-# -------------------------------------------------------------------------------------------
+# -----------------------------------------------------------------------------
 # 🚀 USB den dosya çekme 
 
 Terminal ekranına aşağıdaki satırı yazarsak USB leri listeler
@@ -141,7 +141,7 @@ $ fdisk -l
   <img src="image/usb_list.PNG?raw=true">
 </p>
 
-listeden `sda` ya izin vermek için aşağıdaki satırı yazarız
+Listeden `sda` ya izin vermek için aşağıdaki satırı yazarız
 ```sh
 $ sudo chmod 666 /dev/sda
 ```
@@ -154,7 +154,7 @@ USB ye gerekli izinleri verdikten sonra, USB yi `/media` klasörü içerisinde g
 $ sudo mount /dev/sda1 /media
 ```
 
-`/media` klasörü içerisinden USB ye ait dosyalar görünür. Ve buradan gerekli klasörü istenen yere aşağıdaki satır ile kopyalabiliriz
+`/media` klasörü içerisinden USB ye ait dosyalar görünür. Ve buradan gerekli klasörü bulunduğu yerden, istenen yere aşağıdaki satır ile kopyalabiliriz
 
 ```sh
 $ sudo cp -r /media/raspberry_ws /home/ubuntu
